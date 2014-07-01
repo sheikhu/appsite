@@ -17,6 +17,7 @@ return array(
 	| choice installed on your machine before you begin development.
 	|
 	*/
+	'default' => 'sqlite',
 
 	'connections' => array(
 
@@ -40,6 +41,12 @@ return array(
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
+		),
+
+		'sqlite' => array(
+			'driver'   => 'sqlite',
+			'database' => __DIR__.'/../../database/production.sqlite',
+			'prefix'   => '',
 		),
 
 	),

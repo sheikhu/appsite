@@ -4,7 +4,14 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"intervention/image": "dev-master",
+	    "knplabs/knp-menu": "dev-master"
+	},
+	"require-dev": {
+		"fzaninotto/faker": "dev-master",
+		"way/generators": "dev-master",
+		"barryvdh/laravel-debugbar": "1.*"
 	},
 	"autoload": {
 		"classmap": [

@@ -13,5 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('index');
+    $works = Work::all();
+    //return $works;
+	return View::make('index', compact('works'));
 });
+
+Route::resource('works', 'WorksController');
