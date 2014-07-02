@@ -19,4 +19,6 @@ Route::get('/', function()
 	return View::make('index', compact('works'));
 });
 
+
+Route::post('contact', ['as' => 'contact', 'uses' => 'HomeController@postContact']);
 Route::resource('works', 'WorksController');

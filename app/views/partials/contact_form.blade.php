@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                {{ Form::open() }}
+                {{ Form::open(['route' => 'contact']) }}
                 <div class="row">
                     <div class="form-group col-xs-12 floating-label-form-group">
                         {{ Form::label('name', 'Name') }}
