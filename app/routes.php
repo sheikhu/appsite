@@ -14,6 +14,7 @@
 Route::get('/', function()
 {
     $works = Work::all();
+    
     //return $works;
 	return View::make('index', compact('works'));
 });

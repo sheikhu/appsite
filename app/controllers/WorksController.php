@@ -2,6 +2,13 @@
 
 class WorksController extends \BaseController {
 
+	protected $works;
+
+	public function __construct(Work $works)
+	{
+		$this->works = $works;
+	}
+
 	/**
 	 * Display a listing of works
 	 *
@@ -21,7 +28,7 @@ class WorksController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('works.create');
+		return View::make('works.create', ['work' => $this->works]);
 	}
 
 	/**
