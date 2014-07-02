@@ -9,8 +9,9 @@ class Work extends \Eloquent {
 	];
 
 	// Don't forget to fill this array
-	protected $fillable = ['title'];
+	protected $fillable = ['title', 'date_project', 'service', 'client'];
 
+    protected $dates = array('date_project');
 
     public static function boot()
     {
